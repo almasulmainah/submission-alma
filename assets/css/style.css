@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+
+  font-family: cursive;
+
+  margin: 0;
+  padding: 0;
+}
+
+h2,
+h3 {
+  color: #131414;
+}
+
+footer {
+  padding: 10px;
+  color: white;
+  background-color: #070707;
+  text-align: center;
+  font-weight: bold;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: rgb(252, 250, 250);
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+.profile header {
+  text-align: center;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile img {
+  width: 200px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.jumbotron {
+  font-size: 35px;
+  padding: 10px;
+  background-image: url('img/BG.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: rgb(253, 250, 250);
+}
+
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+
+  gap: 2rem;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav {
+  background-color: #0c0c0c;
+  padding: 5px;
+  z-index: 10;
+  position: sticky;
+  top: 0;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+
+  /*Satu nilai */
+  gap: 1.5rem;
+  /* Celah untuk kedua sisi */
+}
+
+#content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+
+  /* Dua nilai */
+  gap: 1rem 2rem;
+  /* row column */
+}
+
+aside {
+  flex: 1;
+}
+
+header {
+  display: inline;
+  z-index: 9999;
+}
+
+.support img {
+  width: 50px;
+}
+
+.support div,
+.tim div {
+  text-align: center;
+  width: 26%;
+}
+
+section.product {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  overflow: hidden;
+  padding: 30px 30px 3px;
+  color: #0c0c0c;
+}
+
+.product-wrapper {
+  display: flex;
+}
+
+section#produkvid {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: space-around;
+  overflow: hidden;
+  padding: 30px 30px 0px;
+  transition: transform 0.3s;
+  /*-index: 1; */
+}
+
+section.product div {
+  padding: 10px;
+}
+
+section.product div img {
+  height: 200px;
+  border-radius: 0px;
+}
+
+section.quote {
+  background-color: white;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-style: bold;
+  padding: 80px;
+}
+
+/* Perangkat dengan lebar layar 1200px dan di bawahnya */
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+
+  main aside {
+    align-self: center;
+  }
+}
+
+/* Perangkat dengan lebar layar 768px dan di bawahnya */
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+
+  main aside {
+    align-self: stretch;
+    margin-bottom: 10px;
+  }
+}
+
+#contain {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  /* Mengatur tata letak menjadi kolom */
+}
+
+aside {
+  align-self: stretch;
+  padding-bottom: 20px;
+  /* Dua nilai */
+  gap: 1rem 2rem;
+  /* row column */
+}
+
+a {
+  text-decoration: none;
+  color: #0e0d0d;
+}
+
+a:hover {
+  color: #b9c7c6; /* Anda dapat mengganti kode warna ini sesuai keinginan Anda */
+}
+
+select {
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+}

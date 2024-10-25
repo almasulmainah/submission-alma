@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JadiLaper</title>
+
+  <!-- My Own Styles -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header id="home">
+    <div class="jumbotron">
+      <h1>JadiLaper</h1>
+      <p>"Temukan seleramu bersama kami"</p>
+    </div>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="#Home">Home</a>
+        </li>
+        <li>
+          <a href="#makanan">Makanan</a>
+        </li>
+        <li>
+          <a href="#minuman">Minuman</a>
+        </li>
+        <li>
+          <a href="#lengkap">Dessert</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div id="content">
+      <article id="Home" class="card">
+        <h2>Daftar Makanan</h2>
+        <section id="makanan" onmouseover="showProduct(event)" onmouseout="hideProduct(event)" class="product">
+          <div class="product-wrapper">
+            <div>
+              <img src="assets/img/kupat tahu.jpg" alt="kupat" class="image zoomable" />
+              <b><br>Kupat tahu
+                <br>15.000</b>
+            </div>
+            <div>
+              <img src="assets/img/bubur1.png" alt="bubur" class="image zoomable" />
+              <b><br>Bubur ayam
+                <br>15.000</b>
+            </div>
+            <div>
+              <img src="assets/img/mie ayam.jpg" alt="mie" class="image zoomable" />
+              <b><br>Mie ayam
+                <br>15.000</b>
+            </div>
+          </div>
+        </section>
+
+        <section id="produk2" onmouseover="showProduct(event)" onmouseout="hideProduct(event)" class="product">
+          <div class="product-wrapper">
+            <div>
+              <img src="assets/img/rendang malaysia.jpg" alt="rendang" class="image zoomable" />
+              <b><br>Rendang Malaysia
+                <br>30.000</b>
+            </div>
+            <div>
+              <img src="assets/img/SOTO1.png" alt="soto" class="image zoomable" />
+              <b><br>Soto betawi
+                <br>30.000</b>
+            </div>
+            <div>
+              <img src="assets/img/tomyam.jpg" alt="tomyam" class="image zoomable" />
+              <b><br>Tomyam
+                <br>20.000</b>
+            </div>
+          </div>
+        </section>
+
+        <h2>Daftar Minuman</h2>
+        <section id="minuman" onmouseover="showProduct(event)" onmouseout="hideProduct(event)" class="product">
+          <div class="product-wrapper">
+            <div>
+              <img src="assets/img/alpukat2.png" alt="alpukat" class="image zoomable" />
+              <b><br>Alpukat kocok
+                <br>15.000</b>
+            </div>
+            <div>
+              <img src="assets/img/lemon tea.jpg" alt="lemon tea" class="image zoomable" />
+              <b><br>Lemon tea
+                <br>10.000</b>
+            </div>
+            <div>
+              <img src="assets/img/mangga.jpg" alt="jus mangga" class="image zoomable" />
+              <b><br>Jus mangga
+                <br>18.000</b>
+            </div>
+          </div>
+        </section>
+
+
+        <section id="produk4" onmouseover="showProduct(event)" onmouseout="hideProduct(event)" class="product">
+          <div class="product-wrapper">
+            <div>
+              <img src="assets/img/coklat panas.jpg" alt="coklat panas" class="image zoomable" />
+              <b><br>Hot coklat
+                <br>15.000</b>
+            </div>
+            <div>
+              <img src="assets/img/matcha panas.jpg" alt="matcha" class="image zoomable" />
+              <b><br>Hot matcha
+                <br>15.000</b>
+            </div>
+            <div>
+              <img src="assets/img/es matcja.jpg" alt="es" class="image zoomable" />
+              <b><br>Ice matcha
+                <br>20.000</b>
+            </div>
+          </div>
+        </section>
+
+        <h2>Dessert</h2>
+        <section id="lengkap" onmouseover="showProduct(event)" onmouseout="hideProduct(event)" class="product">
+          <div class="product-wrapper">
+            <div><img src="assets/img/creamy.jpg" alt="creamy" class="image zoomable" />
+              <br><b>Strawberry biscuits
+                <br>15.000</b></div>
+            <div><img src="assets/img/terine.jpg" alt="terine" class="image zoomable" />
+              <br><b>Matcha terine
+                <br>20.000</b></div>
+            <div><img src="assets/img/stup1.png" alt="stup" class="image zoomable" />
+              <br><b>Stuff roti
+                <br>25.000</b></div>
+          </div>
+        </section>
+    </div>
+
+
+    <div class="contain">
+      <aside>
+        <article class="profile card">
+          <header>
+            <h2>My profile</h2>
+            <figure>
+              <img src="assets/img/me.JPG">
+            </figure>
+          </header>
+          <section>
+            <table>
+              <tr>
+                <th>Nama:</th>
+                <td>Alma Sulmainah</td>
+              </tr>
+              <tr>
+                <th>Lahir:</th>
+                <td>Sukabumi, 10 Nov 2003</td>
+              </tr>
+              <tr>
+                <th>Gender:</th>
+                <td>Perempuan</td>
+              </tr>
+              <tr>
+                <th>Telepon:</th>
+                <td>+62 234 5678 908</td>
+              </tr>
+            </table>
+          </section>
+        </article>
+      </aside>
+
+      <aside>
+        <article class="sosmed card">
+          <header>
+            <h2 align="center">Sosial media</h2>
+          </header>
+          <section>
+            <table>
+              <tr>
+                <th>
+                  <img src="assets/img/IG.png" width="25px">
+                </th>
+                <td>:<a href="https://www.instagram.com/almakurniawan72?igsh=MXRneGR6YTZrMmdmYQ==">JadiLaper</a></td>
+              </tr>
+              <tr>
+                <th>
+                  <img src="assets/img/FB.png" width="25px">
+                </th>
+                <td>:<a href="https://www.facebook.com/profile.php?id=100068948476021&mibextid=zLoPMf">Jadi_Laper</a>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <img src="assets/img/TT.png" width="25px">
+                </th>
+                <td>:<a href="https://www.tiktok.com/@mulaikreativ?_t=8iPwEaYvX8x&_r=1">JadiLaper_</a> </td>
+              </tr>
+              <tr>
+                <th>
+                  <img src="assets/img/WA.png" width="25px">
+                </th>
+                <td>: +62 856 0356 0728</td>
+              </tr>
+            </table>
+          </section>
+        </article>
+      </aside>
+
+      <aside>
+        <article class="sosmed card">
+          <header>
+            <h2 align="center">Your favorite is...</h2>
+          </header>
+          <section>
+            <!-- Dropdown dengan beberapa opsi -->
+            <select id="menuDropdown" onchange="pilihMenu()">
+              <option value="makanannya">Makanan</option>
+              <option value="minumannya">Minuman</option>
+              <option value="dessertnya">Dessert</option>
+              <option value="lainnya">Lainnya (Tempat, suasana, dll)</option>
+            </select>
+
+            <p id="hasilPilihanmu"></p>
+
+          </section>
+        </article>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <p>Copyrigth &#169; 2023, Alma Sulmainah</p>
+  </footer>
+
+</body>
+<script>
+  function pilihMenu() {
+    var dropdown = document.getElementById("menuDropdown");
+    var hasilPilihan = document.getElementById("hasilPilihanmu");
+
+    var menuPilihan = dropdown.options[dropdown.selectedIndex].value;
+    hasilPilihan.textContent = "Ternyata favoritmu disini adalah " + menuPilihan;
+
+    // Menyimpan hasil pilihan ke local storage
+    localStorage.setItem("selectedMenu", menuPilihan);
+  }
+
+  // Mengambil hasil pilihan dari local storage saat halaman dimuat
+  document.addEventListener("DOMContentLoaded", function () {
+    var savedMenu = localStorage.getItem("selectedMenu");
+    if (savedMenu) {
+      // tampilkan kembali pilihan
+      document.getElementById("hasilPilihanmu").textContent = "Ternyata favoritmu disini adalah " + savedMenu;
+    }
+  });
+</script>
+
+<script>
+  function showProduct(event) {
+    var elementId = event.target.closest('section').id;
+    var produkSection = document.getElementById(elementId);
+  }
+
+  function hideProduct(event) {
+    var elementId = event.target.closest('section').id;
+    var produkSection = document.getElementById(elementId);
+    produkSection.style.transform = '';
+  }
+
+  var zoomableImages = document.querySelectorAll('.zoomable');
+
+  // efek zoom saat kursor diarahkan
+  zoomableImages.forEach(function (image) {
+    image.addEventListener('mouseover', function () {
+      this.style.transform = 'scale(1.2)';
+      this.style.transition = 'transform 0.3s ease-in-out';
+    });
+
+    // reset zoom saat kursor meninggalkan gambar
+    image.addEventListener('mouseout', function () {
+      this.style.transform = '';
+      this.style.transition = '';
+    });
+  });
+</script>
+
+</html>
